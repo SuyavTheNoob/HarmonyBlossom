@@ -6,6 +6,7 @@ const db = require('quick.db');
 const { keep_alive } = require("./keep_alive");
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
+const dotenv = require('dotenv');
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
 client.login(TOKEN);
 client.commands = new Collection();
