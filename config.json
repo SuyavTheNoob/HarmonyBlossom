@@ -1,5 +1,7 @@
 {
-  "TOKEN": "",
+  "TOKEN": client.login(config.TOKEN || process.env.TOKEN).catch((e) => {
+    console.log('TOKEN ERROR❌  - Turn On Intents or Reset New Token');
+});
   "PREFIX": "h!",
   "approveemoji": "✅",
   "denyemoji": "🚫",
